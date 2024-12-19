@@ -34,13 +34,13 @@ STEP 9
 start-worker.sh spark://master_server:port
 
 STEP 10
-start-worker.sh spark://fatima-virtual-machine:7077
+start-worker.sh spark://fatima-VirtualBox:7077
 
 STEP 11
-stop-worker.sh spark://fatima-virtual-machine:7077
+stop-worker.sh spark://fatima-VirtualBox:7077
 
 STEP 12
-start-worker.sh -c 1 spark://fatima-virtual-machine:7077
+start-worker.sh -c 1 spark://fatima-VirtualBox:7077
 
 STEP 13
 spark-shell (to start the spark shell)
