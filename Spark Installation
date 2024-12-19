@@ -49,4 +49,4 @@ STEP 14
 pyspark (to start a python shell using spark)
 
 STEP 15
-
+Ctrl + c (to exit any spark or other terminals inside terminal)
