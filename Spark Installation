@@ -1,0 +1,52 @@
+STEP 1
+https://downloads.apache.org/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz.sha512
+
+STEP 2
+shasum -a 512 -c spark-3.5.3-bin-hadoop3.tgz.sha512
+
+STEP 3
+tar xvf spark-*.tgz
+
+STEP 4
+sudo mv spark-3.5.3-bin-hadoop3 /home/fatima/spark
+
+STEP 5
+sudo nano .bashrc
+(Inside .bashrc)
+
+#Spark settings
+
+export SPARK_HOME=/home/fatima/spark
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+export PYSPARK_PYTHON=/usr/bin/python3
+
+
+STEP 6
+source ~/.bashrc
+
+STEP 7
+start-master.sh (to see in the browser)
+
+STEP 8
+Open Browser then type http://127.0.0.1:8080/
+
+STEP 9
+start-worker.sh spark://master_server:port
+
+STEP 10
+start-worker.sh spark://fatima-virtual-machine:7077
+
+STEP 11
+stop-worker.sh spark://fatima-virtual-machine:7077
+
+STEP 12
+start-worker.sh -c 1 spark://fatima-virtual-machine:7077
+
+STEP 13
+spark-shell (to start the spark shell)
+
+STEP 14
+pyspark (to start a python shell using spark)
+
+STEP 15
+
